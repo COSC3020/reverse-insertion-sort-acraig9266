@@ -45,9 +45,9 @@ function insertionSort(arr) {
     var val = arr[I];				// O(1), can be ignored
     var j;					// O(1), can be ignored
     for(j = i; j > 0 && arr[j-1] > val; j--) {	/*
-						Will always run at least once, can run up to n times
-						Assuming fully randomized inputs, would expect each element to have to move half the arrays length (n/2) to be placed properly.
-						Element moves one place every time through loop. Means loop runs average of n/2 times. O(n/2)∈ O(n)
+			Will always run at least once, can run up to n times
+			Assuming fully randomized inputs, would expect each element to have to move half the arrays length (n/2) to be placed properly.
+			Element moves one place every time through loop. Means loop runs average of n/2 times. O(n/2)∈ O(n)
 						*/
 	arr[j] = arr[j-1];			// O(1), can be ignored
     }
