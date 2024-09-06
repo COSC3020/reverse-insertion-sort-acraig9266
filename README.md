@@ -58,6 +58,7 @@ function insertionSort(arr) {
 }
 ```
 Average complexity is a loop running n times with an internal loop with average of Θ(n)
+
 T(n) = Θ(n) * Θ(n) = Θ(n^2)
 
 T(n) ∈ Θ(n^2)
