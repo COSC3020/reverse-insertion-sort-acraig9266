@@ -38,26 +38,6 @@ constant factors.
 Describe your reasoning and the conclusion you've come to. Your reasoning is
 most important -- you can easily find the answer, but you need to demonstrate
 that you've understood the concept. Add your answer to this markdown file.
-function insertionSort(arr) {
-  for(var i = 1; i < arr.length; i++) {   O(n), will always run as many times as array is long
-  
-    var val = arr[I];                     O(1), can be ignored
-    
-    var j;                                O(1), can be ignored
-    
-	for(j = i; j > 0 && arr[j-1] > val; j--) {	will always run at least once, can run up to n times
-							Assuming fully randomized inputs, would expect each element to have to move half the arrays length to be placed properly, moves one place every time through loop. Means loop runs average of n/2 time. O(n/2)∈ O(n)
-       
-      arr[j] = arr[j-1];                  			O(1), can be ignored
-      
-    }
-    arr[j] = val;                         			O(1), can be ignored
-    
-  }
-  
-  return arr;                             			O(1), can be ignored
-
-
 
 ```javascript
 function insertionSort(arr) { 			
