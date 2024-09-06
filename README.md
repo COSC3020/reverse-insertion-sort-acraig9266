@@ -41,14 +41,14 @@ that you've understood the concept. Add your answer to this markdown file.
 
 ```javascript
 function insertionSort(arr) { 			
-  for(var i = 1; i < arr.length; i++) {		// O(n), will always run as many times as array is long
+  for(var i = 1; i < arr.length; i++) {		// Θ(n), will always run as many times as array is long
     var val = arr[I];				// O(1), can be ignored
     var j;					// O(1), can be ignored
     for(j = i; j > 0 && arr[j-1] > val; j--) {	/*
 			Will always run at least once, can run up to n times
 			Assuming fully randomized inputs, would expect each element to have to move half the arrays length, or (n/2).
 			Element moves one place every time through loop. Means loop runs average of n/2 times.
-			O(n/2)∈ O(n)
+			So complexity for inner loop is n/2 ∈ Θ(n)
 						*/
 	arr[j] = arr[j-1];			// O(1), can be ignored
     }
@@ -57,7 +57,7 @@ function insertionSort(arr) {
   return arr;					// O(1), can be ignored
 }
 ```
-Average complexity is a loop running n times with an internal loop with average of O(n)
-T(n) = O(n) * O(n) = O(n^2)
+Average complexity is a loop running n times with an internal loop with average of Θ(n)
+T(n) = Θ(n) * Θ(n) = Θ(n^2)
 
-T(n) ∈ $Theta$ (n^2)
+T(n) ∈ Θ(n^2)
