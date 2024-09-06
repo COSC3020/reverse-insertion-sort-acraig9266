@@ -58,4 +58,4 @@ function insertionSort(arr) {
 Average complexity is a loop running n times with an internal loop with average of O(n)
 T(n) = O(n) * O(n) = O(n^2)
 
-T(n) ∈ $theta$(n^2)
+T(n) ∈ $Theta$(n^2)
