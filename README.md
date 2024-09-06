@@ -44,18 +44,21 @@ function insertionSort(arr) {
   for(var i = 1; i < arr.length; i++) {   			O(n), will always run as many times as array is long
     var val = arr[I];                     			O(1), can be ignored
     var j;                                			O(1), can be ignored
-		for(j = i; j > 0 && arr[j-1] > val; j--) {	will always run at least once, can run up to n times
-																								Assuming fully randomized inputs, would expect each element to have to move half the arrays length to be placed properly, moves one place every time through loop
-																								Means loop runs average of n/2 time
-																								O(n/2)∈ O(n)
+	for(j = i; j > 0 && arr[j-1] > val; j--) {	will always run at least once, can run up to n times
+							Assuming fully randomized inputs, would expect each element to have to move half the arrays length to be placed properly, moves one place every time through loop. Means loop runs average of n/2 time. O(n/2)∈ O(n)
+       
       arr[j] = arr[j-1];                  			O(1), can be ignored
+      
     }
     arr[j] = val;                         			O(1), can be ignored
+    
   }
+  
   return arr;                             			O(1), can be ignored
+  
 }
 
 Average complexity is a loop running n times with an internal loop with average of O(n)
 T(n) = O(n) * O(n) = O(n^2)
 
-T(n) ∈ $Theta$(n^2)
+T(n) ∈ $Theta$ (n^2)
