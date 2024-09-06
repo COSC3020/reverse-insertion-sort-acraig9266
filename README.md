@@ -39,7 +39,7 @@ Describe your reasoning and the conclusion you've come to. Your reasoning is
 most important -- you can easily find the answer, but you need to demonstrate
 that you've understood the concept. Add your answer to this markdown file.
 
-
+'''javascript
 function insertionSort(arr) {
   for(var i = 1; i < arr.length; i++) {   O(n), will always run as many times as array is long
   
@@ -60,7 +60,7 @@ function insertionSort(arr) {
   return arr;                             			O(1), can be ignored
   
 }
-
+'''
 Average complexity is a loop running n times with an internal loop with average of O(n)
 T(n) = O(n) * O(n) = O(n^2)
 
